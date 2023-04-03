@@ -1,0 +1,249 @@
+/* Theme */
+:root {
+  --font-family: "Open Sans", sans-serif;
+  --danger: #e74c3c;
+  --success: #2ecc71;
+  --primary: #1f6e1b;
+  --brown: #543325;
+  --background-light: #ecf0f1;
+  --text-color: #444;
+  --text-color-light: #fff;
+  --box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  --border: 1px solid #eee;
+}
+
+/* Reset CSS */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  font-family: var(--font-family);
+  background-color: var(--background-light);
+}
+
+h1,
+p {
+  margin: 0;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+/* Container */
+.container {
+  font-size: 2rem;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column;
+  color: var(--text-color);
+}
+
+/* Text */
+.text-danger {
+  color: var(--danger);
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Button */
+.btn {
+  background-color: white;
+  font-weight: 700;
+  color: var(--text-color);
+  font-size: 1.6rem;
+  border: 0;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 3px;
+  margin: 0 5px;
+  box-shadow: var(--box-shadow);
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: var(--text-color-light);
+}
+
+.btn-success {
+  background-color: var(--success);
+  color: var(--text-color-light);
+}
+
+.btn-danger {
+  background-color: var(--danger);
+  color: var(--text-color-light);
+}
+
+.btn-small {
+  padding: 0.5rem 0.1rem;
+  font-size: 1.4rem;
+}
+
+.btn-apologize {
+  background-color: var(--brown);
+  color: var(--text-color-light);
+  display: block;
+  margin: 1.5rem auto;
+  text-align: center;
+}
+
+.btn-modal {
+  margin-top: 4rem;
+  background-color: var(--primary);
+  color: var(--text-color-light);
+}
+
+/* Header */
+header {
+  background-color: var(--brown);
+  padding: 1.5rem;
+  box-shadow: var(--box-shadow);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 2rem;
+  color: var(--text-color-light);
+}
+
+/* Footer */
+footer {
+  background: var(--brown);
+  display: flex;
+  flex-flow: row-reverse;
+  color: var(--text-color-light);
+  padding: 1.5rem;
+}
+
+/* Content */
+.content {
+  flex: 1;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: var(--brown);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: var(--text-color);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Apologizes */
+.apologize-container {
+  padding: 1.5rem 1rem;
+  background-color: white;
+  border: var(--border);
+  border-radius: 3px;
+  min-width: 90rem;
+  min-height: 40rem;
+  box-shadow: var(--box-shadow);
+}
+
+.random-apologize {
+  text-align: center;
+  font-weight: 550;
+  font-size: 3rem;
+  color: var(--primary);
+}
+
+.apologize-container h1 {
+  text-align: center;
+  padding-top: 10rem;
+  color: var(--brown);
+}
+
+.apologize-form {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.apologize-form input {
+  flex: 1;
+  margin-right: 0.5rem;
+  border: var(--border);
+  border-radius: 3px;
+  padding: 10px 15px;
+}
+
+.apologize-item {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  padding: 0.3rem 1.5rem;
+}
+
+.apologize-item:nth-child(odd) {
+  background-color: var(--background-light);
+}
+
+.apologize-name {
+  flex: 1;
+  margin-right: 0.5rem;
+}
+
+/* Lost */
+.lost-gif {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 25rem;
+}
+
+.lost-gif img {
+  width: 60rem;
+  height: 30rem;
+}
+
+.lost-content {
+  display: block;
+  text-align: center;
+  padding-top: 1rem;
+}
